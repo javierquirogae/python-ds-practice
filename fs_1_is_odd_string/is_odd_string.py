@@ -27,5 +27,22 @@ def is_odd_string(word):
         >>> is_odd_string('amazing')
         True
     """
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    
+    lower_word = word.lower()
 
-    # Hint: you may find the ord() function useful here
+    alpha_dict = {}
+
+    summation = 0
+
+    for i in range(26):
+        alpha_dict[alphabet[i]] = i + 1
+
+    for char in lower_word:
+        summation += alpha_dict[char]
+
+    if summation%2 == 0:
+        return False
+    else:
+        return True
+   
