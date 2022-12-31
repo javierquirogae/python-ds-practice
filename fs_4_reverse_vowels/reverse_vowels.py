@@ -1,3 +1,6 @@
+import math
+
+
 def reverse_vowels(s):
     """Reverse vowels in a string.
 
@@ -19,3 +22,6 @@ def reverse_vowels(s):
     reverse_vowels("why try, shy fly?")
     'why try, shy fly?''
     """
+    return math.pi
+
+print(reverse_vowels('s'))

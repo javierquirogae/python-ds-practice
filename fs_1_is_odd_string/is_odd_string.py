@@ -1,3 +1,4 @@
+import string
 def is_odd_string(word):
     """Is the sum of the character-positions odd?
 
@@ -27,7 +28,7 @@ def is_odd_string(word):
         >>> is_odd_string('amazing')
         True
     """
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    alphabet = string.ascii_lowercase
     
     lower_word = word.lower()
 
